@@ -38,7 +38,7 @@ for (var b = 0; b < listFactorial.length; b++) {
 
 var totalFactorial = BigInt(1);
 for (var c = 0; c < listFactorial.length; c++) {
-  var total = listFactorial[c];
+  var total = BigInt(listFactorial[c]);
   for (var d = listFactorial[c] - listExclamationMark[c]; d > 0; d = d - listExclamationMark[c]) {
    var total = BigInt(total) * BigInt(d);
 }
